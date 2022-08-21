@@ -6,11 +6,16 @@
 
 namespace Hazel
 {
+	Application::Application()
+	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
+
 	void Application::Run()
 	{
-		const WindowResizeEvent event(30, 30);
-		HZ_TRACE(event);
-
-		while (true);
+		while (m_bRunning)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }
