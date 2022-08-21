@@ -1,7 +1,5 @@
 #include "hzpch.h"
 #include "Application.h"
-
-#include "Log.h"
 #include "Events/AppEvent.h"
 
 namespace Hazel
