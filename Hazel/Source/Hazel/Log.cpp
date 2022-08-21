@@ -14,6 +14,6 @@ namespace Hazel
 		CoreLogger->set_level(spdlog::level::trace);
 
 		ClientLogger = spdlog::stdout_color_mt("APP");
-		CoreLogger->set_level(spdlog::level::trace);
+		ClientLogger->set_level(spdlog::level::trace);
 	}
 }

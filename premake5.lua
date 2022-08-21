@@ -26,7 +26,8 @@ project "Hazel"
 
 	includedirs
 	{
-		"Hazel/ThirdParty/spdlog/include"
+		"%{prj.name}/Source",
+		"%{prj.name}/ThirdParty/spdlog/include"
 	}
 
 	filter "system:windows"
